@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Devesh's Portfolio</title>
+    <link rel="stylesheet" href="clistyle.css">
+</head>
+<body>
+
+
+    <div class="app-o-window" style="height: 60vh;">
+
+        <div class="app-head">
+            <div class="window-name-cont">
+
+                <div class="window-name">
+                    Terminal
+
+                    <p class="window-close-btn" onclick="showWarning()">&times;</p>
+                </div>
+
+            </div>
+
+            <div class="btns-cont">
+                <div class="minimize btn" onclick="showWarning()">-</div>
+                <div class="resize btn fa" style="font-size: calc(2px + 0.7vw);" onclick="resize()">&#xf24d;</div>
+                <a href="index.html" class="close btn"><div >&times;</div></a>
+            </div>
+        </div>
+
+        <div class="app">
+            
+            <div class="app-outputs" onload="window.scrollTo(0, app.scrollHeight+30)">
+                <div class="app-info">Devesh Keshavan S [Final Year Undergraduate]</div>
+                <div class="app-info">Copyright (C) sdkeshavan.github.io</div>
+                <div class="app-info">Type 'help' to get more information.</div>
+
+            </div>
+
+            
+            <div class="command-input-cont">
+
+                <div class="cmd-path">255.255.255.255:\Users\guest1></div>
+                <input class="command-input" maxlength="20" autofocus onkeypress="handleKeyPress(event)"/>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="warning-popup-cont" style="display: none;">
+        <div class="warning-popup">
+            <div class="popup-header">
+                <div class="popup-name" style="font-family: Arial;"><span class="warning-icon">&times;</span> System dev Error</div>
+                <div class="popup-close-btn" onclick="showWarning()">&times;</div>
+            </div>
+
+            <div class="error-desc">
+
+                Unassigned Button Error :\\<br>
+                Sorry its just a UI element there is nothing to minimize
+            </div>
+
+            <div class="error-footer">
+                <div class="error-ok-btn" onclick="showWarning()">OK</div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="cliScript.js"></script>
+
+    
+</body>
+</html>
