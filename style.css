@@ -1,12 +1,15 @@
 :root{
-    --main-bg-color: #cacaca;
+    --main-bg-color: #e7e7e7;
     --main-text-color: #000000;
     --main-accent-color: #000000;
     --main-font-family: Courier, sans-serif;
+    --sec-bg-color: #cdcdcd;
 }
 
 *{
     font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -40,18 +43,51 @@ header{
 .home{
     display: grid;
     place-items: center;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     height: calc(100vh - 81px);
-    padding: 0 10vw;
+    /* padding: 0 10vw; */
 }
+
+.whoami{
+    font-size: calc(3vw + 30px);
+    word-spacing: -20px;
+}
+/* -------------------------------------------------------------------------- */
+/* .profile-pic{
+    width: calc(100% - 10px);
+    border: 5px solid var(--main-accent-color);
+} */
+
+.img-cont{
+height: 100%;
+width: 100%;
+overflow: hidden;
+position: relative;
+}
+
+/* .img-cont::after{
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 100px;
+    background-color: red;
+    z-index: 1000;
+    top:-1000px;
+    bottom: -1000px;
+    right: -50px;
+    rotate: 5deg;
+} */
 
 .profile-pic{
-    width: 30vw;
-    border: 5px solid var(--main-accent-color);
+    /* height: 100%; */
+    width: 100%;
+    /* max-width: 300px; */
+    /* border: 5px solid var(--main-accent-color); */
 }
 
+
 .whoami-section{
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .socials{
@@ -66,4 +102,53 @@ header{
     width: 27px;
     /* margin-right: 8px; */
     vertical-align: middle;
+}
+
+/* .img-cont{
+    padding: 10px;
+    margin: 10px;
+    outline: 2px solid var(--main-accent-color);
+    outline-offset: 3px;
+    border: 2px solid var(--main-accent-color);
+} */
+
+/* .img-cont img{
+    border-radius: 50%;
+} */
+
+.projects-page{
+    display: grid;
+    padding: 30px 20vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+}
+
+
+.project-item{
+    display: grid;
+    /* width: calc(5v   w + 200px); */
+    background-color: var(--sec-bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+    height: min-content;
+}
+
+.project-image{
+    width: 100%;
+    max-height: 140px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.project-text{
+    padding: 10px;
+    display: grid;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.136);
+    /* min-height: 100%; */
+}
+
+.project-text > *:not(:last-child){
+    /* border-bottom: 1px solid var(--main-accent-color); */
+    padding: 5px 0;
 }
