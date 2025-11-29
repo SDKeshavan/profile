@@ -19,14 +19,14 @@
                 <div class="window-name">
                     Terminal
 
-                    <p class="window-close-btn" onclick="showWarning()">&times;</p>
+                    <p class="window-close-btn">&times;</p>
                 </div>
 
             </div>
 
             <div class="btns-cont">
-                <div class="minimize btn" onclick="showWarning()">-</div>
-                <div class="resize btn fa" style="font-size: calc(2px + 0.7vw);" onclick="resize()">&#xf24d;</div>
+                <div class="minimize btn">-</div>
+                <div class="resize btn fa" style="font-size: calc(2px + 0.7vw);">&#xf24d;</div>
                 <a href="index.html" class="close btn"><div >&times;</div></a>
             </div>
         </div>
@@ -52,7 +52,7 @@
             <div class="command-input-cont">
 
                 <div class="cmd-path">255.255.255.255:\Users\guest1></div>
-                <input class="command-input" maxlength="20" autofocus onkeypress="handleKeyPress(event)"/>
+                <input class="command-input" maxlength="20" autofocus/>
             </div>
 
         </div>
@@ -65,7 +65,7 @@
         <div class="warning-popup">
             <div class="popup-header">
                 <div class="popup-name" style="font-family: Arial;"><span class="warning-icon">&times;</span> System dev Error</div>
-                <div class="popup-close-btn" onclick="showWarning()">&times;</div>
+                <div class="popup-close-btn">&times;</div>
             </div>
 
             <div class="error-desc">
@@ -75,13 +75,13 @@
             </div>
 
             <div class="error-footer">
-                <div class="error-ok-btn" onclick="showWarning()">OK</div>
+                <div class="error-ok-btn">OK</div>
             </div>
         </div>
     
     </div>
 
-    <script src="cliScript.js"></script>
+    <script type="module" src="cliScript.js" defer></script>
 
     
 </body>
