@@ -107,12 +107,13 @@ function showProjects(){
 
     projectList.forEach(project =>{
         tempProjStr += `
+                <li class="project-item-cli">
                     <h3>${project.name}</h3>
                     <p><strong>Description:</strong> ${project.description}</p>
                     <p><strong>Skills:</strong> ${project.skills.join(', ')}</p>
-                    <p><strong>Github:</strong> <a href="${project.github}" target="_blank">View on Github</a></p>
-                    ${project.website ? `<p><strong>Website:</strong> <a href="${project.website}" target="_blank">Visit Website</a></p>` : ''}
-
+                    <p><strong>Github:</strong> <a href="${project.github}" target="_blank">View on Github</a><br>
+                    ${project.website ? `<strong>Website:</strong> <a href="${project.website}" target="_blank">Visit Website</a></p>` : ''}
+                </li>
         `   
     })
 

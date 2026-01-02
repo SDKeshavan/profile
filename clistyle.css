@@ -235,3 +235,11 @@ a:hover{
     border: 1px solid #0080ff;
     cursor: pointer;
 }
+
+.project-item-cli{
+    margin-right: 20px;
+}
+
+.project-item-cli:not(:last-child){
+    border-bottom: 1px dashed white;
+}
