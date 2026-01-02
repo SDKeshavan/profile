@@ -5,7 +5,7 @@ export const projectList = [
                 description:
                 "A Chrome extension that integrates with the CompRL platform to provide quick access, and streamlined interactions with other 3rd party services.",
                 skills: ["Java", "Spring Boot", "CSS", "Firebase", "REST API"],
-                github: "#",
+                github: "https://github.com/DevsRep/CompRL-Chrome-Extension",
                 // website: "#"
             },
             {
@@ -16,6 +16,15 @@ export const projectList = [
                 skills: ["React", "Web Crypto API", "CSS", "Firebase"],
                 github: "https://github.com/DevsRep/BinRL",
                 website: "https://comprl.web.app/"
+            },
+            {
+                image: "Images/tanglishasr.png",
+                name: "CodeSwitched ASR for Tanglish",
+                description:
+                "Built an offline, edge-optimized ASR system for Tamil–English (Tanglish) code-switched speech using Wav2Vec2, enabling real-time bilingual transcription on low-resource devices.",
+                skills: ["Edge AI", "Wav2Vec2", "ASR", "Speech-To-Text"],
+                // github: "https://github.com/SDKeshavan/thestory",
+                website: "https://tanglishasr.web.app/"
             },
             {
                 image: "Images/smartparking.png",
