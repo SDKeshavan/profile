@@ -1,5 +1,14 @@
 export const projectList = [
             {
+                image: "Images/kaaviyam.png",
+                name: "Kaaviyam",
+                description:
+                "Kaaviyam is a free, ad-free music streaming application inspired by Spotify, designed specifically for streaming non-copyrighted music. This project is a complete full-stack system built using only free-tier cloud services",
+                skills: ["Deployement", "System Design", "Spring Boot", "Firebase"],
+                github: "https://github.com/notaninfamousengineer/kaaviyam",
+                // website: "#"
+            },
+            {
                 image: "Images/comprl_cho_ext.png",
                 name: "CompRL Chrome Extension",
                 description:
